@@ -1,0 +1,61 @@
+:root {
+  --primary-bg: #dddddd;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: var(--primary-bg);
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.game {
+  padding: 20px;
+  margin-left: calc(50% - 216px);
+}
+
+table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  font-size: 100px;
+}
+
+.player  {
+  overflow: hidden;
+  background: white;
+}
+
+.player a:hover {
+  background: green;
+  color: black;
+}
+
+.playerX {
+  background: red;
+  color: white;
+}
+
+.playerO {
+  background: blue;
+  color: white;
+}
+
+.winner {
+  background: yellow;
+  color: black;
+}
