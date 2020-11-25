@@ -40,22 +40,27 @@ th, td {
   background: white;
 }
 
-.player a:hover {
+.player:hover {
   background: green;
   color: black;
 }
 
 .playerX {
-  background: red;
+  background: darkred;
   color: white;
 }
 
 .playerO {
-  background: blue;
+  background: darkblue;
   color: white;
 }
 
-.winner {
-  background: yellow;
-  color: black;
+.winnerX {
+  background: red;
+  color: white;
+}
+
+.winnerO {
+  background: blue;
+  color: white;
 }
