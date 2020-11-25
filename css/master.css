@@ -63,7 +63,7 @@ th, td {
 }
 
 .player:hover {
-  background: green;
+  background: lightgray;
   color: black;
 }
 
