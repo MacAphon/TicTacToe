@@ -92,6 +92,10 @@ th, td {
   color: white;
 }
 
+.feedbackText {
+  font-size: 50px;
+}
+
 .button {
   background: white;
   border: 3px solid black;

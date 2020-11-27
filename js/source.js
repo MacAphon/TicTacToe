@@ -64,11 +64,13 @@ function move(event) {
       document.getElementById("ab").className = "winnerX";
       document.getElementById("ac").className = "winnerX";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player X wins.";
     } else if (document.getElementById("aa").innerHTML == "O") {
       document.getElementById("aa").className = "winnerO";
       document.getElementById("ab").className = "winnerO";
       document.getElementById("ac").className = "winnerO";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player O wins.";
     }
   } else if (document.getElementById("ba").innerHTML == document.getElementById("bb").innerHTML &&
     document.getElementById("ba").innerHTML == document.getElementById("bc").innerHTML) {
@@ -78,11 +80,13 @@ function move(event) {
       document.getElementById("bb").className = "winnerX";
       document.getElementById("bc").className = "winnerX";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player X wins.";
     } else if (document.getElementById("ba").innerHTML == "O") {
       document.getElementById("ba").className = "winnerO";
       document.getElementById("bb").className = "winnerO";
       document.getElementById("bc").className = "winnerO";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player O wins.";
     }
   } else if (document.getElementById("ca").innerHTML == document.getElementById("cb").innerHTML &&
     document.getElementById("ca").innerHTML == document.getElementById("cc").innerHTML) {
@@ -92,11 +96,13 @@ function move(event) {
       document.getElementById("cb").className = "winnerX";
       document.getElementById("cc").className = "winnerX";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player X wins.";
     } else if (document.getElementById("ca").innerHTML == "O") {
       document.getElementById("ca").className = "winnerO";
       document.getElementById("cb").className = "winnerO";
       document.getElementById("cc").className = "winnerO";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player O wins.";
     }
   } else if (document.getElementById("aa").innerHTML == document.getElementById("ba").innerHTML &&
     document.getElementById("aa").innerHTML == document.getElementById("ca").innerHTML) {
@@ -106,11 +112,13 @@ function move(event) {
       document.getElementById("ba").className = "winnerX";
       document.getElementById("ca").className = "winnerX";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player X wins.";
     } else if (document.getElementById("aa").innerHTML == "O") {
       document.getElementById("aa").className = "winnerO";
       document.getElementById("ba").className = "winnerO";
       document.getElementById("ca").className = "winnerO";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player O wins.";
     }
   } else if (document.getElementById("ab").innerHTML == document.getElementById("bb").innerHTML &&
     document.getElementById("ab").innerHTML == document.getElementById("cb").innerHTML) {
@@ -120,11 +128,13 @@ function move(event) {
       document.getElementById("bb").className = "winnerX";
       document.getElementById("cb").className = "winnerX";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player X wins.";
     } else if (document.getElementById("ab").innerHTML == "O") {
       document.getElementById("ab").className = "winnerO";
       document.getElementById("bb").className = "winnerO";
       document.getElementById("cb").className = "winnerO";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player O wins.";
     }
   } else if (document.getElementById("ac").innerHTML == document.getElementById("bc").innerHTML &&
     document.getElementById("ac").innerHTML == document.getElementById("cc").innerHTML) {
@@ -134,11 +144,13 @@ function move(event) {
       document.getElementById("bc").className = "winnerX";
       document.getElementById("cc").className = "winnerX";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player X wins.";
     } else if (document.getElementById("ac").innerHTML == "O") {
       document.getElementById("ac").className = "winnerO";
       document.getElementById("bc").className = "winnerO";
       document.getElementById("cc").className = "winnerO";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player O wins.";
     }
   } else if (document.getElementById("aa").innerHTML == document.getElementById("bb").innerHTML &&
     document.getElementById("aa").innerHTML == document.getElementById("cc").innerHTML) {
@@ -148,11 +160,13 @@ function move(event) {
       document.getElementById("bb").className = "winnerX";
       document.getElementById("cc").className = "winnerX";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player X wins.";
     } else if (document.getElementById("aa").innerHTML == "O") {
       document.getElementById("aa").className = "winnerO";
       document.getElementById("bb").className = "winnerO";
       document.getElementById("cc").className = "winnerO";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player O wins.";
     }
   } else if (document.getElementById("ca").innerHTML == document.getElementById("bb").innerHTML &&
     document.getElementById("ca").innerHTML == document.getElementById("ac").innerHTML) {
@@ -162,11 +176,13 @@ function move(event) {
       document.getElementById("bb").className = "winnerX";
       document.getElementById("ac").className = "winnerX";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player X wins.";
     } else if (document.getElementById("ca").innerHTML == "O") {
       document.getElementById("ca").className = "winnerO";
       document.getElementById("bb").className = "winnerO";
       document.getElementById("ac").className = "winnerO";
       fillEmpty();
+      document.getElementById("feedbackText").innerHTML = "Player O wins.";
     }
   }
 }
@@ -184,15 +200,15 @@ function resetGame() {
   document.getElementById("cb").className = "player";
   document.getElementById("cc").className = "player";
 
-  document.getElementById("aa").innerHTML = ""
-  document.getElementById("ab").innerHTML = ""
-  document.getElementById("ac").innerHTML = ""
+  document.getElementById("aa").innerHTML = "";
+  document.getElementById("ab").innerHTML = "";
+  document.getElementById("ac").innerHTML = "";
 
-  document.getElementById("ba").innerHTML = ""
-  document.getElementById("bb").innerHTML = ""
-  document.getElementById("bc").innerHTML = ""
+  document.getElementById("ba").innerHTML = "";
+  document.getElementById("bb").innerHTML = "";
+  document.getElementById("bc").innerHTML = "";
 
-  document.getElementById("ca").innerHTML = ""
-  document.getElementById("cb").innerHTML = ""
-  document.getElementById("cc").innerHTML = ""
+  document.getElementById("ca").innerHTML = "";
+  document.getElementById("cb").innerHTML = "";
+  document.getElementById("cc").innerHTML = "";
 }
