@@ -13,6 +13,36 @@ document.getElementById("cc").addEventListener("click", move);
 var activePlayer = "X";
 var activeClass = "playerX";
 
+function fillEmpty() {
+  if (document.getElementById("aa").className == "player") {
+    document.getElementById("aa").className = "emptyend";
+  }
+  if (document.getElementById("ba").className == "player") {
+    document.getElementById("ba").className = "emptyend";
+  }
+  if (document.getElementById("ca").className == "player") {
+    document.getElementById("ca").className = "emptyend";
+  }
+  if (document.getElementById("ab").className == "player") {
+    document.getElementById("ab").className = "emptyend";
+  }
+  if (document.getElementById("bb").className == "player") {
+    document.getElementById("bb").className = "emptyend";
+  }
+  if (document.getElementById("bc").className == "player") {
+    document.getElementById("bc").className = "emptyend";
+  }
+  if (document.getElementById("ca").className == "player") {
+    document.getElementById("ca").className = "emptyend";
+  }
+  if (document.getElementById("cb").className == "player") {
+    document.getElementById("cb").className = "emptyend";
+  }
+  if (document.getElementById("cc").className == "player") {
+    document.getElementById("cc").className = "emptyend";
+  }
+}
+
 function move(event) {
   if (activePlayer == "X" && event.target.className == "player") {
     event.target.innerHTML = "X";
@@ -38,6 +68,7 @@ function move(event) {
       document.getElementById("ab").className = "winnerO";
       document.getElementById("ac").className = "winnerO";
     }
+    fillEmpty();
   } else if (document.getElementById("ba").innerHTML == document.getElementById("bb").innerHTML &&
     document.getElementById("ba").innerHTML == document.getElementById("bc").innerHTML) {
 
@@ -50,6 +81,7 @@ function move(event) {
       document.getElementById("bb").className = "winnerO";
       document.getElementById("bc").className = "winnerO";
     }
+    fillEmpty();
   } else if (document.getElementById("ca").innerHTML == document.getElementById("cb").innerHTML &&
     document.getElementById("ca").innerHTML == document.getElementById("cc").innerHTML) {
 
@@ -62,6 +94,7 @@ function move(event) {
       document.getElementById("cb").className = "winnerO";
       document.getElementById("cc").className = "winnerO";
     }
+    fillEmpty();
   } else if (document.getElementById("aa").innerHTML == document.getElementById("ba").innerHTML &&
     document.getElementById("aa").innerHTML == document.getElementById("ca").innerHTML) {
 
@@ -74,6 +107,7 @@ function move(event) {
       document.getElementById("ba").className = "winnerO";
       document.getElementById("ca").className = "winnerO";
     }
+    fillEmpty();
   }  else if (document.getElementById("ab").innerHTML == document.getElementById("bb").innerHTML &&
     document.getElementById("ab").innerHTML == document.getElementById("cb").innerHTML) {
 
@@ -86,6 +120,7 @@ function move(event) {
       document.getElementById("bb").className = "winnerO";
       document.getElementById("cb").className = "winnerO";
     }
+    fillEmpty();
   }  else if (document.getElementById("ac").innerHTML == document.getElementById("bc").innerHTML &&
     document.getElementById("ac").innerHTML == document.getElementById("cc").innerHTML) {
 
@@ -98,6 +133,7 @@ function move(event) {
       document.getElementById("bc").className = "winnerO";
       document.getElementById("cc").className = "winnerO";
     }
+    fillEmpty();
   } else if (document.getElementById("aa").innerHTML == document.getElementById("bb").innerHTML &&
     document.getElementById("aa").innerHTML == document.getElementById("cc").innerHTML) {
 
@@ -110,6 +146,7 @@ function move(event) {
       document.getElementById("bb").className = "winnerO";
       document.getElementById("cc").className = "winnerO";
     }
+    fillEmpty();
   } else if (document.getElementById("ca").innerHTML == document.getElementById("bb").innerHTML &&
     document.getElementById("ca").innerHTML == document.getElementById("ac").innerHTML) {
 
@@ -122,5 +159,6 @@ function move(event) {
       document.getElementById("bb").className = "winnerO";
       document.getElementById("ac").className = "winnerO";
     }
+    fillEmpty();
   }
 }
