@@ -67,6 +67,11 @@ th, td {
   color: black;
 }
 
+.emptyend  {
+  overflow: hidden;
+  background: white;
+}
+
 .playerX {
   background: darkred;
   color: white;
