@@ -91,3 +91,16 @@ th, td {
   background: blue;
   color: white;
 }
+
+.button {
+  background: white;
+  border: 3px solid black;
+  color: black;
+  padding: 5px;
+  font-size: 30px;
+  left: 50%;
+}
+
+.button:hover {
+  background: lightgray;
+}

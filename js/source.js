@@ -170,3 +170,29 @@ function move(event) {
     }
   }
 }
+
+function resetGame() {
+  document.getElementById("aa").className = "player";
+  document.getElementById("ab").className = "player";
+  document.getElementById("ac").className = "player";
+
+  document.getElementById("ba").className = "player";
+  document.getElementById("bb").className = "player";
+  document.getElementById("bc").className = "player";
+
+  document.getElementById("ca").className = "player";
+  document.getElementById("cb").className = "player";
+  document.getElementById("cc").className = "player";
+
+  document.getElementById("aa").innerHTML = ""
+  document.getElementById("ab").innerHTML = ""
+  document.getElementById("ac").innerHTML = ""
+
+  document.getElementById("ba").innerHTML = ""
+  document.getElementById("bb").innerHTML = ""
+  document.getElementById("bc").innerHTML = ""
+
+  document.getElementById("ca").innerHTML = ""
+  document.getElementById("cb").innerHTML = ""
+  document.getElementById("cc").innerHTML = ""
+}
