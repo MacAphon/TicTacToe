@@ -41,6 +41,7 @@ function fillEmpty() {
   if (document.getElementById("cc").className == "player") {
     document.getElementById("cc").className = "emptyend";
   }
+  activePlayer = "X";
 }
 
 function move(event) {
@@ -183,7 +184,19 @@ function move(event) {
       document.getElementById("ac").className = "winnerO";
       fillEmpty();
       document.getElementById("feedbackText").innerHTML = "Player O wins.";
-    }
+    } else if (document.getElementById("aa").className != "player" &&
+      document.getElementById("ab").className != "player" &&
+      document.getElementById("ac").className != "player" &&
+
+      document.getElementById("ba").className != "player" &&
+      document.getElementById("bb").className != "player" &&
+      document.getElementById("bc").className != "player" &&
+
+      document.getElementById("ca").className != "player" &&
+      document.getElementById("cb").className != "player" &&
+      document.getElementById("cc").className != "player") {
+        document.getElementById("feedbackText").innerHTML = "It's a draw.";
+      }
   }
 }
 
@@ -211,4 +224,6 @@ function resetGame() {
   document.getElementById("ca").innerHTML = "";
   document.getElementById("cb").innerHTML = "";
   document.getElementById("cc").innerHTML = "";
+
+  activePlayer = "X";
 }

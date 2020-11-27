@@ -94,6 +94,7 @@ th, td {
 
 .feedbackText {
   font-size: 50px;
+  text-align: center;
 }
 
 .button {
@@ -102,7 +103,8 @@ th, td {
   color: black;
   padding: 5px;
   font-size: 30px;
-  left: 50%;
+  margin-left: calc(50% - 95px);
+  margin-top: 10px;
 }
 
 .button:hover {
